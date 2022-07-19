@@ -1,0 +1,47 @@
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+/* .list-group{
+    padding-left: 700px;
+} */
+/* .panel-heading{
+    padding-left: 700px;
+    margin-bottom: 10px;
+} */
+.badge {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;  
+        text-align: center;
+        border-radius: 50%;
+        padding: 0;
+        font-size: 0.7rem;
+        position: absolute;
+        top: 5px;
+}
+.dashbg-3 {
+    background: #e95f71;
+}
+.col-lg-8 {
+    width: 66.66666667%;
+}
+.col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
+    float: left;
+}
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #ddd;
+    border-color: #ddd;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.sidebar[data-active-color="danger"] .nav li.active > a, .sidebar[data-active-color="danger"] .nav li.active > a i, .sidebar[data-active-color="danger"] .nav li.active > a[data-toggle="collapse"], .sidebar[data-active-color="danger"] .nav li.active > a[data-toggle="collapse"] i, .sidebar[data-active-color="danger"] .nav li.active > a[data-toggle="collapse"] ~ div > ul > li.active .sidebar-mini-icon, .sidebar[data-active-color="danger"] .nav li.active > a[data-toggle="collapse"] ~ div > ul > li.active > a, .off-canvas-sidebar[data-active-color="danger"] .nav li.active > a, .off-canvas-sidebar[data-active-color="danger"] .nav li.active > a i, .off-canvas-sidebar[data-active-color="danger"] .nav li.active > a[data-toggle="collapse"], .off-canvas-sidebar[data-active-color="danger"] .nav li.active > a[data-toggle="collapse"] i, .off-canvas-sidebar[data-active-color="danger"] .nav li.active > a[data-toggle="collapse"] ~ div > ul > li.active .sidebar-mini-icon, .off-canvas-sidebar[data-active-color="danger"] .nav li.active > a[data-toggle="collapse"] ~ div > ul > li.active > a {
+    color: #ee3b3b;
+    opacity: 1;
+}

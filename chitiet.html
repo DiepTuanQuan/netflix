@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Diep Tuan Quan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="acset/img/netflix.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="acset/css/bootstrap.css">
+        <script src="acset/js/jquery-3.6.0.min.js"></script>
+        <script src="acset/js/bootstrap.js"></script>
+        <script src="acset/js/less-1.7.0.min.js"></script>
+    <!-- css tu lam -->
+    <link rel="stylesheet" href="./acset/css/syte.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="./acset/img/logo.png" alt="NetFlix"></a>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+            <!-- <li><a href="#">My List</a></li> -->
+        </ul>
+        
+    </header>
+    <div class="baner">
+        <div class="content">
+            <img src="./acset/img/name.png" alt="Mulan" class="movieTitle">
+            <h3 class="star" style="color: #ca8a23"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></h3>
+            <h4>
+                <span>2020</span>
+                <span><i>12+</i></span>
+                <span>1h 55min</span>
+                <span>Action</span>
+            </h4>
+            <p>
+                Hoa Mộc Lan (tên gốc tiếng Anh: Mulan) là phim điện ảnh chính kịch hành động kỳ ảo của Mỹ năm 2020 do Walt Disney Pictures sản xuất. Phim do Nick Caro đạo diễn, với phần kịch bản do Rick Jaffa và Elizabeth Martin hợp tác thực hiện. Phim dựa trên huyền sử về nữ anh hùng Hoa Mộc Lan của Trung Quốc và là phiên bản chuyển thể từ bộ phim hoạt hình cùng tên năm 1998 của Walt Disney Animation Studios. Phim có sự tham gia diễn xuất của nữ diễn viên Lưu Diệc Phi trong vai nữ chính.
+            </p>
+            <div class="buttons">
+               <a data-toggle="modal" data-target=".my-moda" data-backdrop="true" data-keyboard="true" href="#"><i class="fas fa-play"></i>Play</a>
+                <a data-toggle="modal" data-target=".my-moda" data-backdrop="true" data-keyboard="true" href="#"><i class="fas fa-plus"></i>My List</a>
+                <div data-show ="false" class="modal fade my-moda" role="dialog" aria-labelledby="myModalLable" aria-hidden="true" tabindex='-1'>
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Thông báo</h4>
+                            </div>
+                            <div class="modal-body">
+                                <h5>Tính năng hiện đang cập nhật&hellip;</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+
+                            </div>
+                        </div>
+                    </div>                 
+                </div>
+            </div>
+        </div>
+            <a data-toggle="modal" data-target=".my-modal" data-backdrop="true" data-keyboard="true" href="#" class="play"><img src="./acset/img/play.png" alt="Mulan">Watch Trailer</a>
+            <div data-show ="false" class="modal fade my-modal" role="dialog" aria-labelledby="myModalLable" aria-hidden="true" tabindex='-1'>
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">Trailer</h4>
+                        </div>
+                        <div class="modal-body">
+                            <video width="100%" height="200px" controls loop>
+                                <source src="./acset/img/trailer.mp4">
+                            </video>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+    </div>        
+</body>
+
+</html>

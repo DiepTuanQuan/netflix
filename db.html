@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Diep Tuan Quan</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="acset/img/netflix.ico" type="image/x-icon">
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="./acset/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Morris Charts CSS -->
+    <link href="acset/css/morris.css" rel="stylesheet">
+    <link href="./acset/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./acset/css/paper-dashboard.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./acset/css/db.css">
+
+  </head>
+<body >
+    <div class="wrapper ">
+      <div class="sidebar" data-color="white" data-active-color="danger">
+        <div class="logo">
+          <a href="index.html" class="simple-text logo-mini">
+            <div class="logo-image-small">
+              <img src="./acset/img/logo.png">
+            </div>
+            <!-- <p>CT</p> -->
+          </a>
+          <a href="index.html" class="simple-text logo-normal">
+            Diep Tuan Quan
+          </a>
+        </div>
+        <div class="sidebar-wrapper">
+          <ul class="nav">
+            <li class="active ">
+              <a href="javascript:;">
+                <i class="fas fa-tachometer-alt"></i>
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <i class="fas fa-bell"></i>
+                <p>Notifications</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <i class="fas fa-user"></i>
+                <p>User Profile</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <i class="fas fa-chart-bar"></i>
+                <p>Chart</p>
+              </a>
+            </li>
+          </ul>
+         
+        </div>
+      </div>
+      <div class="main-panel" >
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+          <div class="container-fluid">
+            <div class="navbar-wrapper">
+              <div class="navbar-toggle">
+                <button type="button" class="navbar-toggler">
+                  <span class="navbar-toggler-bar bar1"></span>
+                  <span class="navbar-toggler-bar bar2"></span>
+                  <span class="navbar-toggler-bar bar3"></span>
+                </button>
+              </div>
+              <a class="navbar-brand" href="javascript:;">Netflix Dashboard</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-bar navbar-kebab"></span>
+              <span class="navbar-toggler-bar navbar-kebab"></span>
+              <span class="navbar-toggler-bar navbar-kebab"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation">
+              <form>
+                <div class="input-group no-border">
+                  <input type="text" value="" class="form-control" placeholder="Search...">
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <ul class="navbar-nav">
+                <li class="nav-item btn-rotate dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="far fa-bell"></i><span class="badge dashbg-3">3</span>
+                    
+                    <p>
+                      <span class="d-lg-none d-md-block">Some Actions</span>
+                    </p>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a href="#" class="dropdown-item">
+                      <div class="content">   
+                        <strong class="d-block">Quan Diep</strong><span class="d-block">You need to work</span><small class="date d-block">7:40am</small>
+                      </div>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      <div class="content">   
+                        <strong class="d-block">Diep Van</strong><span class="d-block">Study hard</span><small class="date d-block">8:20pm</small>
+                      </div>
+                    <a class="dropdown-item" href="#"><div class="content">   
+                      <strong class="d-block">Chau Van</strong><span class="d-block">Play hard</span><small class="date d-block">6:10pm</small>
+                    </div></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- End Navbar -->
+    <div class="content">
+          <div class="row">
+            <!-- <div class="col-md-12">
+              <h3 class="description">Netflix Dashboard</h3>
+            </div> -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-body ">
+                  <div class="row">
+                    <div class="col-5 col-md-4">
+                      <div class="icon-big text-center icon-warning">
+                        <i class="far fa-gem"></i>
+                      </div>
+                    </div>
+                    <div class="col-7 col-md-8">
+                      <div class="numbers">
+                        <p class="card-category">Capacity</p>
+                        <p class="card-title">150GB<p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer ">
+                  <hr>
+                  <div class="stats">
+                    <i class="fas fa-sync"></i>
+                    <a>Update Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-body ">
+                  <div class="row">
+                    <div class="col-5 col-md-4">
+                      <div class="icon-big text-center icon-warning">
+                        <i class="fas fa-dollar-sign"></i>
+                      </div>
+                    </div>
+                    <div class="col-7 col-md-8">
+                      <div class="numbers">
+                        <p class="card-category">Money</p>
+                        <p class="card-title">$ 1,345<p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer ">
+                  <hr>
+                  <div class="stats">
+                    <i class="fas fa-calendar-week"></i>
+                    <a>Last day</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-body ">
+                  <div class="row">
+                    <div class="col-5 col-md-4">
+                      <div class="icon-big text-center icon-warning">
+                        <i class="fas fa-bug"></i>
+                      </div>
+                    </div>
+                    <div class="col-7 col-md-8">
+                      <div class="numbers">
+                        <p class="card-category">Errors</p>
+                        <p class="card-title">23<p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer ">
+                  <hr>
+                  <div class="stats">
+                    <i class="fas fa-clock"></i>
+                   <a> In the last hour</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-body ">
+                  <div class="row">
+                    <div class="col-5 col-md-4">
+                      <div class="icon-big text-center icon-warning">
+                        <i class="fas fa-user-plus"></i>
+                      </div>
+                    </div>
+                    <div class="col-7 col-md-8">
+                      <div class="numbers">
+                        <p class="card-category">User</p>
+                        <p class="card-title">+45K<p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer ">
+                  <hr>
+                  <div class="stats">
+                    <i class="fas fa-sync"></i>
+                   <a>Update Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-lg-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  <i class="far fa-chart-bar"></i> Area Chart
+                    <div class="pull-right">
+
+                    </div>
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div id="morris-area-chart" style="position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="342" version="1.1" width="650" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="49.546875" y="308" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font: 12px sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#aaaaaa" d="M62.046875,308H625" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="49.546875" y="237.25" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font: 12px sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">7,500</tspan></text><path fill="none" stroke="#aaaaaa" d="M62.046875,237.25H625" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="49.546875" y="166.5" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font: 12px sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">15,000</tspan></text><path fill="none" stroke="#aaaaaa" d="M62.046875,166.5H625" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="49.546875" y="95.75" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font: 12px sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">22,500</tspan></text><path fill="none" stroke="#aaaaaa" d="M62.046875,95.75H625" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="49.546875" y="25" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font: 12px sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">30,000</tspan></text><path fill="none" stroke="#aaaaaa" d="M62.046875,25H625" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="521.0280984204131" y="320.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font: 12px sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2021</tspan></text><text x="271.3587294957473" y="320.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font: 12px sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2020</tspan></text><path fill="#7cb47c" stroke="none" d="M62.046875,257.8807C77.77946537059537,252.69236666666666,109.24464611178615,241.9253958333333,124.97723648238153,237.12736666666666C140.7098268529769,232.3293375,172.17500759416768,226.06474717668488,187.90759796476306,219.49646666666666C203.46918191828675,212.9995805100182,234.59234982533417,186.80528908839776,250.15393377885786,184.86669999999998C265.5445113153099,182.94941408839776,296.32566638821385,202.66302023809524,311.71624392466583,204.07296666666667C327.44883429526124,205.51424523809524,358.914015036452,195.3117583333333,374.6466054070474,196.27159999999998C390.3791957776428,197.23144166666665,421.84437651883354,228.79010418943534,437.57696688942895,211.7517C453.13855084295267,194.89849585610202,484.26171875,68.92631666666665,499.8233027035237,60.705166666666656C515.3848866570474,52.484016666666655,546.5080545640948,133.92807891621126,562.0696385176185,145.9825C577.8022288882139,158.16938724954463,609.2674096294046,154.748425,625,157.6704L625,308L62.046875,308Z" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#4da74d" d="M62.046875,257.8807C77.77946537059537,252.69236666666666,109.24464611178615,241.9253958333333,124.97723648238153,237.12736666666666C140.7098268529769,232.3293375,172.17500759416768,226.06474717668488,187.90759796476306,219.49646666666666C203.46918191828675,212.9995805100182,234.59234982533417,186.80528908839776,250.15393377885786,184.86669999999998C265.5445113153099,182.94941408839776,296.32566638821385,202.66302023809524,311.71624392466583,204.07296666666667C327.44883429526124,205.51424523809524,358.914015036452,195.3117583333333,374.6466054070474,196.27159999999998C390.3791957776428,197.23144166666665,421.84437651883354,228.79010418943534,437.57696688942895,211.7517C453.13855084295267,194.89849585610202,484.26171875,68.92631666666665,499.8233027035237,60.705166666666656C515.3848866570474,52.484016666666655,546.5080545640948,133.92807891621126,562.0696385176185,145.9825C577.8022288882139,158.16938724954463,609.2674096294046,154.748425,625,157.6704" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="62.046875" cy="257.8807" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="124.97723648238153" cy="237.12736666666666" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="187.90759796476306" cy="219.49646666666666" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="250.15393377885786" cy="184.86669999999998" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="311.71624392466583" cy="204.07296666666667" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="374.6466054070474" cy="196.27159999999998" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="437.57696688942895" cy="211.7517" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="499.8233027035237" cy="60.705166666666656" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="562.0696385176185" cy="145.9825" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="625" cy="157.6704" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#a7b3bc" stroke="none" d="M62.046875,282.8507333333333C77.77946537059537,277.1765833333333,109.24464611178615,265.12432083333334,124.97723648238153,260.15413333333333C140.7098268529769,255.18394583333333,172.17500759416768,245.80665191256827,187.90759796476306,243.0892333333333C203.46918191828675,240.4013519125683,234.59234982533417,240.71814415285453,250.15393377885786,238.53293333333335C265.5445113153099,236.3717358195212,296.32566638821385,228.73457664835163,311.71624392466583,225.7036C327.44883429526124,222.6052683150183,358.914015036452,213.8871708333333,374.6466054070474,214.01569999999998C390.3791957776428,214.14422916666666,421.84437651883354,239.86483752276865,437.57696688942895,226.73183333333333C453.13855084295267,213.74157918943533,484.26171875,117.22498333333331,499.8233027035237,109.52266666666665C515.3848866570474,101.82034999999999,546.5080545640948,157.02737399817852,562.0696385176185,165.1133C577.8022288882139,173.28808233151184,609.2674096294046,172.20245,625,174.5655L625,308L62.046875,308Z" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#7a92a3" d="M62.046875,282.8507333333333C77.77946537059537,277.1765833333333,109.24464611178615,265.12432083333334,124.97723648238153,260.15413333333333C140.7098268529769,255.18394583333333,172.17500759416768,245.80665191256827,187.90759796476306,243.0892333333333C203.46918191828675,240.4013519125683,234.59234982533417,240.71814415285453,250.15393377885786,238.53293333333335C265.5445113153099,236.3717358195212,296.32566638821385,228.73457664835163,311.71624392466583,225.7036C327.44883429526124,222.6052683150183,358.914015036452,213.8871708333333,374.6466054070474,214.01569999999998C390.3791957776428,214.14422916666666,421.84437651883354,239.86483752276865,437.57696688942895,226.73183333333333C453.13855084295267,213.74157918943533,484.26171875,117.22498333333331,499.8233027035237,109.52266666666665C515.3848866570474,101.82034999999999,546.5080545640948,157.02737399817852,562.0696385176185,165.1133C577.8022288882139,173.28808233151184,609.2674096294046,172.20245,625,174.5655" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="62.046875" cy="282.8507333333333" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="124.97723648238153" cy="260.15413333333333" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="187.90759796476306" cy="243.0892333333333" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="250.15393377885786" cy="238.53293333333335" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="311.71624392466583" cy="225.7036" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="374.6466054070474" cy="214.01569999999998" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="437.57696688942895" cy="226.73183333333333" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="499.8233027035237" cy="109.52266666666665" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="562.0696385176185" cy="165.1133" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="625" cy="174.5655" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#2577b5" stroke="none" d="M62.046875,282.8507333333333C77.77946537059537,282.5866,109.24464611178615,284.44260833333334,124.97723648238153,281.7942C140.7098268529769,279.14579166666664,172.17500759416768,262.8360351548269,187.90759796476306,261.66346666666664C203.46918191828675,260.50364348816026,234.59234982533417,274.71505662983424,250.15393377885786,272.4646333333333C265.5445113153099,270.2389399631676,296.32566638821385,245.97829532967035,311.71624392466583,243.75900000000001C327.44883429526124,241.490386996337,358.914015036452,252.16645833333334,374.6466054070474,254.513C390.3791957776428,256.8595416666667,421.84437651883354,273.67962604735885,437.57696688942895,262.53133333333335C453.13855084295267,251.50421771402551,484.26171875,172.7295375,499.8233027035237,165.81136666666666C515.3848866570474,158.89319583333332,546.5080545640948,199.3979123406193,562.0696385176185,207.18596666666667C577.8022288882139,215.05960400728597,609.2674096294046,223.14009166666668,625,228.45813333333334L625,308L62.046875,308Z" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#0b62a4" d="M62.046875,282.8507333333333C77.77946537059537,282.5866,109.24464611178615,284.44260833333334,124.97723648238153,281.7942C140.7098268529769,279.14579166666664,172.17500759416768,262.8360351548269,187.90759796476306,261.66346666666664C203.46918191828675,260.50364348816026,234.59234982533417,274.71505662983424,250.15393377885786,272.4646333333333C265.5445113153099,270.2389399631676,296.32566638821385,245.97829532967035,311.71624392466583,243.75900000000001C327.44883429526124,241.490386996337,358.914015036452,252.16645833333334,374.6466054070474,254.513C390.3791957776428,256.8595416666667,421.84437651883354,273.67962604735885,437.57696688942895,262.53133333333335C453.13855084295267,251.50421771402551,484.26171875,172.7295375,499.8233027035237,165.81136666666666C515.3848866570474,158.89319583333332,546.5080545640948,199.3979123406193,562.0696385176185,207.18596666666667C577.8022288882139,215.05960400728597,609.2674096294046,223.14009166666668,625,228.45813333333334" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="62.046875" cy="282.8507333333333" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="124.97723648238153" cy="281.7942" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="187.90759796476306" cy="261.66346666666664" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="250.15393377885786" cy="272.4646333333333" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="311.71624392466583" cy="243.75900000000001" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="374.6466054070474" cy="254.513" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="437.57696688942895" cy="262.53133333333335" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="499.8233027035237" cy="165.81136666666666" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="562.0696385176185" cy="207.18596666666667" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="625" cy="228.45813333333334" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle></svg><div class="morris-hover morris-default-style" style="left: 194.154px; top: 168px; display: none;"><div class="morris-hover-row-label">2010 Q4</div><div class="morris-hover-point" style="color: #0b62a4">
+iPhone:
+3,767
+</div><div class="morris-hover-point" style="color: #7A92A3">
+iPad:
+3,597
+</div><div class="morris-hover-point" style="color: #4da74d">
+iPod Touch:
+5,689
+</div></div></div>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+            <br>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  <i class="far fa-chart-bar"></i> Bar Chart 
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div id="morris-bar-chart" style="position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="342" version="1.1" width="423" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative; left: -0.65625px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="32.859375" y="308" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font: 12px sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.359375,308H398" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.859375" y="237.25" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font: 12px sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">25</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.359375,237.25H398" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.859375" y="166.5" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font: 12px sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">50</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.359375,166.5H398" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.859375" y="95.75" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font: 12px sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">75</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.359375,95.75H398" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.859375" y="25" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font: 12px sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.359375,25H398" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="372.81138392857144" y="320.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font: 12px sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2021</tspan></text><text x="272.0569196428571" y="320.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font: 12px sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2020</tspan></text><text x="171.30245535714286" y="320.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font: 12px sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2019</tspan></text><text x="70.54799107142857" y="320.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font: 12px sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2018</tspan></text><rect x="51.65652901785714" y="25" width="17.39146205357143" height="283" r="0" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="72.04799107142857" y="53.29999999999998" width="17.39146205357143" height="254.70000000000002" r="0" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="102.03376116071428" y="95.75" width="17.39146205357143" height="212.25" r="0" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="122.42522321428571" y="124.04999999999998" width="17.39146205357143" height="183.95000000000002" r="0" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="152.41099330357142" y="166.5" width="17.39146205357143" height="141.5" r="0" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="172.80245535714283" y="194.8" width="17.39146205357143" height="113.19999999999999" r="0" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="202.78822544642858" y="95.75" width="17.39146205357143" height="212.25" r="0" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="223.1796875" y="124.04999999999998" width="17.39146205357143" height="183.95000000000002" r="0" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="253.16545758928572" y="166.5" width="17.39146205357143" height="141.5" r="0" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="273.55691964285717" y="194.8" width="17.39146205357143" height="113.19999999999999" r="0" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="303.5426897321429" y="95.75" width="17.39146205357143" height="212.25" r="0" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="323.93415178571433" y="124.04999999999998" width="17.39146205357143" height="183.95000000000002" r="0" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="353.91992187500006" y="25" width="17.39146205357143" height="283" r="0" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="374.3113839285715" y="53.29999999999998" width="17.39146205357143" height="254.70000000000002" r="0" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect></svg><div class="morris-hover morris-default-style" style="display: none;"></div></div>
+                        </div>
+                        <!-- /.col-lg-8 (nested) -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">           
+          <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="fa fa-bell fa-fw"></i> Notifications Panel
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <i class="fa fa-comment fa-fw"></i> New Comment
+                            <span class="pull-right text-muted small"><em>4 minutes ago</em>
+                            </span>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <i class="fa fa-envelope fa-fw"></i> Message Sent
+                            <span class="pull-right text-muted small"><em>27 minutes ago</em>
+                            </span>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <i class="fa fa-tasks fa-fw"></i> New Task
+                            <span class="pull-right text-muted small"><em>43 minutes ago</em>
+                            </span>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                            <span class="pull-right text-muted small"><em>11:32 AM</em>
+                            </span>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <i class="fa fa-bolt fa-fw"></i> Server Crashed!
+                            <span class="pull-right text-muted small"><em>11:13 AM</em>
+                            </span>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
+                            <span class="pull-right text-muted small"><em>9:49 AM</em>
+                            </span>
+                    </a>                    
+                </div>   
+                <a href="#" class="btn btn-default btn-block">View All Alerts</a>            
+            </div>
+            <!-- /.panel-body -->
+            <br>
+          </div>  
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <i class="far fa-chart-bar"></i> Donut Chart 
+            </div>
+            <div class="panel-body">
+                <div id="morris-donut-chart"><svg height="342" version="1.1" width="294" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><path fill="none" stroke="#0b62a4" d="M147,264.8333333333333A91.33333333333333,91.33333333333333,0,0,0,233.35180688739524,203.25135669275903" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#0b62a4" stroke="#ffffff" d="M147,267.8333333333333A94.33333333333333,94.33333333333333,0,0,0,236.1881801063243,204.22859103668176L271.8004216328778,216.49831113260063A132,132,0,0,1,147,305.5Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#3980b5" d="M233.35180688739524,203.25135669275903A91.33333333333333,91.33333333333333,0,0,0,65.0802706076015,133.11515489624878" stroke-width="2" opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"></path><path fill="#3980b5" stroke="#ffffff" d="M236.1881801063243,204.22859103668176A94.33333333333333,94.33333333333333,0,0,0,62.38947657646432,131.78864538554163L24.120405911402244,112.92273234437317A137,137,0,0,1,276.52771033109286,218.12703503913855Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#679dc6" d="M65.0802706076015,133.11515489624878A91.33333333333333,91.33333333333333,0,0,0,146.97130678756912,264.83332882621403" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#679dc6" stroke="#ffffff" d="M62.38947657646432,131.78864538554163A94.33333333333333,94.33333333333333,0,0,0,146.97036430978855,267.83332867816995L146.95853097765465,305.49999348606116A132,132,0,0,1,28.60506262996421,115.13358152888509Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="147" y="163.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font: 800 15px Arial;" font-size="15px" font-weight="800" transform="matrix(1.4265,0,0,1.4265,-62.6902,-74.418)" stroke-width="0.7010340632603406"><tspan dy="6" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Netflix Sales</tspan></text><text x="147" y="183.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font: 14px Arial;" font-size="14px" transform="matrix(1.9028,0,0,1.9028,-132.8,-158.4375)" stroke-width="0.5255474452554745"><tspan dy="5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">30</tspan></text></svg></div>
+                <a href="#" class="btn btn-default btn-block">View Details</a>
+            </div>
+            <!-- /.panel-body -->
+        </div>       
+        </div>
+    </div> 
+      </div>
+    </div>      
+    <!--   Core JS Files   -->
+    <script src="./acset/js/core/jquery.min.js"></script>
+    <script src="./acset/js/core/popper.min.js"></script>
+    <script src="./acset/js/core/bootstrap.min.js"></script>
+    <script src="./acset/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+
+    <script src="./acset/js/plugins/chartjs.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="acset/js/metisMenu.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="acset/js/startmin.js"></script>
+    <script src="./acset/js/plugins/bootstrap-notify.js"></script>
+    <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="./acset/js/paper-dashboard.min.js" type="text/javascript"></script>
+</body> 
+</html>
+  
